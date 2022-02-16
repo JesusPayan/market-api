@@ -3,7 +3,7 @@ package com.marketapi.persintence.entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
+
 
 @Entity
 @Table(name = "compras")
@@ -47,11 +47,11 @@ public class Compra {
         this.comentario = comentario;
     }
 
-    public Date getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
 
