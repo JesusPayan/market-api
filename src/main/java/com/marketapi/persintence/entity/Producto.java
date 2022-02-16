@@ -27,6 +27,10 @@ public class Producto{
 
     private Float precioVenta;
 
+    @ManyToOne /*REPRESENTA LA RELACION UNO A MUCHOS DE UNA BASE DE DATOS*/
+    @JoinColumn(name = "id_categoria", insertable = false,updatable = false)
+    private Categoria categoria;
+
     public Integer getIdProducto() {
         return idProducto;
     }

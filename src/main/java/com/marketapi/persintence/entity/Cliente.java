@@ -1,9 +1,9 @@
 package com.marketapi.persintence.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "clientes")
@@ -18,6 +18,8 @@ public class Cliente {
     private String direccion;
     private Integer Celular;
 
+    @OneToMany(mappedBy = "cliente")
+    List<Compra> compraList;
 
     public Integer getIdCliente() {
         return idCliente;
