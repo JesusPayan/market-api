@@ -8,6 +8,7 @@ public class MarketApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MarketApiApplication.class, args);
+		System.out.println("App is Running");
 	}
 
 }
